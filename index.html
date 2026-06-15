@@ -1,13 +1,40 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <img
-        src="https://media.tenor.com/dCXnBkePGhwAAAAe/kirby-line-sticker-kirby-hi.png"
-        />
-        <h1> Hi! Welcome to Ayush's Landing Page </h1>
-        <p> This is built upon the Calhacks 11.0 Personal Website workshop</p>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ayush Madhukar's Game Boy Advance-style pixel bedroom: AI, hardware, homelab, audio, notes, projects, and creative technology."
+    />
+    <meta name="theme-color" content="#0b0b0b" />
+    <title>Ayush Madhukar | Pixel Bedroom</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="gba-shell" aria-label="Ayush's room">
+        <section class="gba-screen" aria-label="Interactable pixel bedroom">
+          <canvas
+            id="room-canvas"
+            width="240"
+            height="160"
+            tabindex="0"
+            aria-label="Game Boy Advance-style bedroom. Move with arrow keys or WASD. Inspect objects with Z or Enter."
+          ></canvas>
+          <div id="bedroom-items" class="sr-only-list" aria-label="Accessible bedroom object list"></div>
+        </section>
+      </main>
+
+      <noscript>
+        <section class="noscript-fallback">
+          <h1>Ayush Madhukar</h1>
+          <p>
+            Computer Engineering student in the Bay Area interested in AI, hardware, audio,
+            homelabs, Obsidian, Linux, and creative technology.
+          </p>
+        </section>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
